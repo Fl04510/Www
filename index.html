@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selamat Ulang Tahun</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Great Vibes', cursive;
+    }
+    body, html {
+      height: 100%;
+      overflow: hidden;
+    }
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.6);
+    }
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      background-color: rgba(0, 0, 64, 0.4);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,64,0.5);
+    }
+    .gallery {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+      filter: drop-shadow(0 0 5px white);
+    }
+    .gallery img:hover {
+      transform: scale(1.2) rotate(5deg);
+      filter: drop-shadow(0 0 10px #00f);
+    }
+    .letter {
+      margin-top: 30px;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #002;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay loop muted class="video-bg">
+    <source src="video-kamu.mp4" type="video/mp4" />
+    Browser kamu tidak mendukung video latar.
+  </video>
+
+  <audio autoplay loop>
+    <source src="musik-latar.mp3" type="audio/mp3" />
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <div class="content">
+    <h1>Selamat Ulang Tahun, Cinta 💙</h1>
+    <div class="gallery">
+      <img src="foto1.jpg" alt="Foto 1" />
+      <img src="foto2.jpg" alt="Foto 2" />
+      <img src="foto3.jpg" alt="Foto 3" />
+    </div>
+    <div class="letter">
+      <p>
+        Untukmu yang terindah,<br><br>
+        Happy birthday buat cewek paling keren yang aku kenal.
+        Kamu tuh cantik iya, lucu banget, pinter juga, dan mandiri—kombo yang susah banget dicari. Kadang aku mikir, kok bisa ya satu orang punya semuanya?
+        Di hari ulang tahun kamu ini, aku cuma mau bilang makasih karena udah jadi kamu. Yang apa adanya, yang selalu bikin aku nyaman dan semangat. Semoga apa pun yang kamu impikan, satu-satu bisa kamu capai.
+        Dan semoga aku bisa terus ada di samping kamu—dengerin cerita-cerita kamu, ketawa bareng, dan nemenin kamu di setiap langkah yang kamu pilih.
+        Selamat ulang tahun ya, kamu.
+        Jangan berubah. Kecuali makin sayang aku 😌💙<br>
+        A.Faaars
+      </p>
+    </div>
+  </div>
+</body>
+</html>
